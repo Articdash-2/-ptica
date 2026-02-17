@@ -1,0 +1,13 @@
+# Python (Basura que genera al ejecutar scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Entornos virtuales
+venv/
+env/
+
+# Configuración de Editores (Opcional)
+.vscode/
+.history/
+.DS_Store

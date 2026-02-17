@@ -1,0 +1,493 @@
+/* =========================================
+    1. VARIABLES Y CONFIGURACIÓN BASE
+    ========================================= */
+:root {
+  --primary: #00a1e4;
+  --dark: #0b0e11;
+  --light: #f8f9fa;
+  --glass: rgba(255, 255, 255, 0.05);
+}
+
+[data-theme="light"] {
+  --bg: var(--light);
+  --txt: #1a1a1a;
+  --glass: rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] {
+  --bg: var(--dark);
+  --txt: #ffffff;
+  --glass: rgba(255, 255, 255, 0.05);
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--txt);
+  font-family: "Segoe UI", sans-serif;
+  overflow-x: hidden;
+}
+
+/* --- BOTÓN DE TEMA --- */
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 5000;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  border: none;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 161, 228, 0.3);
+}
+
+/* =========================================
+    2. PRELOADER Y HEADER
+    ========================================= */
+#preloader-art {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader-content {
+  text-align: center;
+  width: 80%;
+  max-width: 300px;
+}
+#img-preloader {
+  width: 140px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 0 10px var(--primary));
+}
+.loader-track {
+  width: 100%;
+  height: 4px;
+  background: #222;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.loader-fill {
+  width: 0%;
+  height: 100%;
+  background: var(--primary);
+  animation: load 2.5s ease-in-out forwards;
+}
+
+@keyframes load {
+  to {
+    width: 100%;
+  }
+}
+
+header {
+  height: 60vh;
+  position: relative;
+  background: #000;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("img/logo.jpeg") center/cover;
+  filter: blur(25px) brightness(0.4);
+  z-index: 1;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("img/logo.jpeg") center/contain no-repeat;
+  z-index: 2;
+  mask-image: linear-gradient(to bottom, black 85%, transparent 100%);
+}
+
+/* =========================================
+    3. BARRA DE CONTACTO Y TÍTULOS
+    ========================================= */
+.contact-bar-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  position: relative;
+  z-index: 10;
+  padding: 0 15px;
+}
+
+.contact-bar {
+  background: var(--glass);
+  backdrop-filter: blur(15px);
+  padding: 12px 25px;
+  border-radius: 50px;
+  border: 1px solid rgba(0, 161, 228, 0.3);
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  font-size: 0.85rem;
+}
+
+.contact-bar .cta-link {
+  text-decoration: none;
+  color: inherit; /* Mantiene el blanco/celeste de tu diseño */
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.contact-bar .cta-link:hover {
+  color: #00ffcc; /* Un color cyan para que sepa que es clickeable */
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.cta-link {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.typing-section {
+  padding: 40px 10px;
+  text-align: center;
+}
+#titulo-escrito {
+  font-size: clamp(1.2rem, 5vw, 2.3rem);
+  min-height: 1.5em;
+}
+#titulo-escrito::after {
+  content: "|";
+  margin-left: 5px;
+  color: var(--primary);
+  animation: parpadeo 0.8s infinite;
+}
+@keyframes parpadeo {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* =========================================
+    4. SECCIÓN BIO (CUIDADO PROFESIONAL)
+    ========================================= */
+.bio-section {
+  padding: 60px 20px;
+  text-align: center;
+}
+.bio-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.bio-badge {
+  display: inline-block;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  padding: 5px 15px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  background: var(--glass);
+}
+.bio-text h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.bio-description {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 650px;
+  margin: 0 auto;
+}
+.visitanos-text {
+  display: block;
+  margin-top: 20px;
+  color: var(--primary);
+  font-weight: bold;
+}
+.bio-footer {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.bio-footer .line {
+  width: 60px;
+  height: 4px;
+  background: var(--primary);
+  border-radius: 10px;
+}
+
+/* =========================================
+    5. FILTROS Y GRID (AJUSTADO PARA DESCRIPCIÓN)
+    ========================================= */
+.category-filter-section {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.filter-btn {
+  padding: 10px 22px;
+  border: 2px solid var(--primary);
+  background: transparent;
+  color: var(--txt);
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 5px;
+  transition: 0.3s;
+}
+.filter-btn.active {
+  background: var(--primary);
+  color: white;
+  box-shadow: 0 0 15px var(--primary);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 25px; /* Espacio para que respire la descripción */
+  width: 95%;
+  margin: 40px auto;
+}
+
+@media (max-width: 1100px) {
+  .grid-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+.card {
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column; /* Apila imagen y luego texto */
+  align-items: center;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Contenedor de la imagen para mantener el 1:1 */
+.card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  opacity: 0;
+  transition: 0.5s;
+  margin-bottom: 10px;
+}
+.card img[src] {
+  opacity: 1;
+}
+.card:hover img {
+  border-color: var(--primary);
+}
+
+/* =========================================
+    6. SECCIÓN HORARIOS
+    ========================================= */
+.horarios-section {
+  padding: 60px 20px;
+  background: var(--glass);
+}
+.horarios-container {
+  max-width: 450px;
+  margin: 0 auto;
+  text-align: center;
+}
+.horarios-container h3 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+  color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.horarios-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.dia {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.2);
+}
+.dia strong {
+  color: var(--txt);
+}
+.dia strong.cerrado {
+  color: #ff4757;
+}
+
+/* =========================================
+    7. MODAL Y EFECTO VIVO (REUTILIZABLE)
+    ========================================= */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.92);
+  z-index: 20000;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.modal-img {
+  max-width: 90%;
+  max-height: 65vh;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+/* EL EFECTO QUE QUERÍAS REUTILIZAR */
+/* =========================================
+    7. COMPONENTES DE TEXTO VIVO (REUTILIZABLE)
+   ========================================= */
+
+/* Estilo BASE: Lo que comparten la grid y el modal */
+.descripcion-viva,
+#desc-texto {
+  padding: 8px 15px;
+  border-radius: 12px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  background-image: linear-gradient(90deg, #00a1e4, #00ffcc, #ff007a, #00a1e4);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation:
+    brilloTexto 4s linear infinite,
+    aparecerYVibrar 0.8s ease-out;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--primary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ajuste específico para la GRID (Cartas) */
+.card .descripcion-viva {
+  font-size: 0.75rem; /* Letra más pequeña y fina */
+  min-height: 40px; /* Altura fija para alineación */
+  width: 90%;
+  margin-top: 10px;
+  padding: 5px;
+  border-width: 1px;
+}
+
+/* Ajuste específico para el MODAL (Texto Grande) */
+#desc-texto {
+  font-size: 1.3rem;
+  padding: 15px 25px;
+  max-width: 85%;
+  border-width: 2px;
+}
+
+@keyframes brilloTexto {
+  to {
+    background-position: 300% center;
+  }
+}
+@keyframes aparecerYVibrar {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.cerrar-modal {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  width: 45px;
+  height: 45px;
+  background: var(--primary);
+  color: white !important;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* =========================================
+    8. FOOTER FINAL
+    ========================================= */
+.footer-custom {
+  padding: 60px 20px;
+  text-align: center;
+}
+.shimmer-text {
+  display: inline-block;
+  background: linear-gradient(90deg, #00a1e4, #00ffcc, #00a1e4) !important;
+  background-size: 200% auto;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  animation: shimmer 3s linear infinite;
+}
+@keyframes shimmer {
+  to {
+    background-position: 200% center;
+  }
+}
+.footer-line {
+  border: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--primary), transparent);
+  margin: 30px auto;
+  width: 60%;
+  opacity: 0.3;
+}
+.footer-bottom-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.copyright {
+  font-size: 0.9rem;
+  opacity: 0.7;
+}
+.emoji-fix {
+  -webkit-text-fill-color: initial !important;
+  background: none !important;
+  display: inline-block;
+}
