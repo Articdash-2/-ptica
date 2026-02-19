@@ -1,398 +1,390 @@
 [
-    {
-        "nombre": "a",
-        "cat": "linia de marca",
-        "desc": "GUESS ARO DE ACETATO",
-        "id": "MARC-001"
-    },
-    {
-        "nombre": "a2",
-        "cat": "linia de marca",
-        "desc": "BOSS CUADRADO",
-        "id": "MARC-002"
-    },
-    {
-        "nombre": "a3",
-        "cat": "linia de marca",
-        "desc": "LACOSTE",
-        "id": "MARC-003"
-    },
-    {
-        "nombre": "b",
-        "cat": "linia de marca",
-        "desc": "CAROLINA CARRERA",
-        "id": "MARC-004"
-    },
-    {
-        "nombre": "b2",
-        "cat": "linia de marca",
-        "desc": "MISSONI ACETATO",
-        "id": "MARC-005"
-    },
-    {
-        "nombre": "b3",
-        "cat": "linia de marca",
-        "desc": "MISSONI METAL",
-        "id": "MARC-006"
-    },
-    {
-        "nombre": "c",
-        "cat": "linia de marca",
-        "desc": "GUESS ACETATO",
-        "id": "MARC-007"
-    },
-    {
-        "nombre": "c2",
-        "cat": "linia de marca",
-        "desc": "NINE WEST ARO SEMI AL AIRE DE METAL",
-        "id": "MARC-008"
-    },
-    {
-        "nombre": "c3",
-        "cat": "linia de marca",
-        "desc": "GANT",
-        "id": "MARC-009"
-    },
-    {
-        "nombre": "d",
-        "cat": "linia de marca",
-        "desc": "CAROLINA CARRERA",
-        "id": "MARC-010"
-    },
-    {
-        "nombre": "d2",
-        "cat": "linia de marca",
-        "desc": "TOUS",
-        "id": "MARC-011"
-    },
-    {
-        "nombre": "d3",
-        "cat": "linia de marca",
-        "desc": "FILA",
-        "id": "MARC-012"
-    },
-    {
-        "nombre": "e",
-        "cat": "linia de marca",
-        "desc": "CALVIN KLEIN ARO CUADRADO DE METAL",
-        "id": "MARC-013"
-    },
-    {
-        "nombre": "e2",
-        "cat": "linia de marca",
-        "desc": "CARRERA ARO DE ACETATO",
-        "id": "MARC-014"
-    },
-    {
-        "nombre": "e3",
-        "cat": "linia de marca",
-        "desc": "MARCIANO ARO DE METAL Y ACETATO",
-        "id": "MARC-015"
-    },
-    {
-        "nombre": "f",
-        "cat": "linia de marca",
-        "desc": "CALVIN KLEIN ARO CUADRADO DE METAL",
-        "id": "MARC-016"
-    },
-    {
-        "nombre": "f2",
-        "cat": "linia de marca",
-        "desc": "SKECHERS ACETATO",
-        "id": "MARC-017"
-    },
-    {
-        "nombre": "f3",
-        "cat": "linia de marca",
-        "desc": "MARCIANO ARO DE METAL Y ACETATO",
-        "id": "MARC-018"
-    },
-    {
-        "nombre": "g",
-        "cat": "linia de marca",
-        "desc": "CALVIN KLEIN ARO REDONDO DE METAL",
-        "id": "MARC-019"
-    },
-    {
-        "nombre": "g2",
-        "cat": "linia de marca",
-        "desc": "Marc Jacobs",
-        "id": "MARC-020"
-    },
-    {
-        "nombre": "g3",
-        "cat": "linia de marca",
-        "desc": "MARCIANO ARO DE METAL Y ACETATO",
-        "id": "MARC-021"
-    },
-    {
-        "nombre": "h",
-        "cat": "linia de marca",
-        "desc": "CALVIN KLEIN ARO CUADRADO DE METAL",
-        "id": "MARC-022"
-    },
-    {
-        "nombre": "h2",
-        "cat": "linia de marca",
-        "desc": "TOMMY HILFIGER",
-        "id": "MARC-023"
-    },
-    {
-        "nombre": "h3",
-        "cat": "linia de marca",
-        "desc": "MARCIANO ARO DE METAL Y ACETATO",
-        "id": "MARC-024"
-    },
-    {
-        "nombre": "i",
-        "cat": "linia de marca",
-        "desc": "CALVIN KLEIN ARO CUADRADO DE METAL",
-        "id": "MARC-025"
-    },
-    {
-        "nombre": "i2",
-        "cat": "linia de marca",
-        "desc": "BOSS ARO REDONDO DE ACETATO",
-        "id": "MARC-026"
-    },
-    {
-        "nombre": "i3",
-        "cat": "linia de marca",
-        "desc": "MARCIANO ARO DE ACETATO",
-        "id": "MARC-027"
-    },
-    {
-        "nombre": "j",
-        "cat": "linia de marca",
-        "desc": "CALVIN KLEIN ARO CUADRADO DE METAL",
-        "id": "MARC-028"
-    },
-    {
-        "nombre": "j2",
-        "cat": "linia de marca",
-        "desc": "CARRERA ARO DE METAL",
-        "id": "MARC-029"
-    },
-    {
-        "nombre": "j3",
-        "cat": "linia de marca",
-        "desc": "MARCIANO ARO DE ACETATO",
-        "id": "MARC-030"
-    },
-    {
-        "nombre": "k",
-        "cat": "linia de marca",
-        "desc": "CALVIN KLEIN ARO REDONDO DE METAL",
-        "id": "MARC-031"
-    },
-    {
-        "nombre": "k2",
-        "cat": "linia de marca",
-        "desc": "LEVIS",
-        "id": "MARC-032"
-    },
-    {
-        "nombre": "k3",
-        "cat": "linia de marca",
-        "desc": "CAROLINA HERRERA ARO DE ACETATO",
-        "id": "MARC-033"
-    },
-    {
-        "nombre": "l",
-        "cat": "linia de marca",
-        "desc": "CALVIN KLEIN ARO REDONDO DE METAL",
-        "id": "MARC-034"
-    },
-    {
-        "nombre": "l2",
-        "cat": "linia de marca",
-        "desc": "NINE WEST ARO SEMI AL AIRE DE METAL",
-        "id": "MARC-035"
-    },
-    {
-        "nombre": "l3",
-        "cat": "linia de marca",
-        "desc": "CAROLINA HERRERA ",
-        "id": "MARC-036"
-    },
-    {
-        "nombre": "m",
-        "cat": "linia de marca",
-        "desc": "GUESS ARO DE METAL",
-        "id": "MARC-037"
-    },
-    {
-        "nombre": "m2",
-        "cat": "linia de marca",
-        "desc": "MISSONI METAL",
-        "id": "MARC-038"
-    },
-    {
-        "nombre": "m3",
-        "cat": "linia de marca",
-        "desc": "CALVIN KLEIN ARO SEMI REDONDO DE METAL",
-        "id": "MARC-039"
-    },
-    {
-        "nombre": "n",
-        "cat": "linia de marca",
-        "desc": "GUESS ARO DE METAL",
-        "id": "MARC-040"
-    },
-    {
-        "nombre": "n2",
-        "cat": "linia de marca",
-        "desc": "BOSS REDONDO",
-        "id": "MARC-041"
-    },
-    {
-        "nombre": "n3",
-        "cat": "linia de marca",
-        "desc": "CALVIN KLEIN ARO SEMI REDONDO DE METAL",
-        "id": "MARC-042"
-    },
-    {
-        "nombre": "o",
-        "cat": "linia de marca",
-        "desc": "LACOSTE",
-        "id": "MARC-043"
-    },
-    {
-        "nombre": "o2",
-        "cat": "linia de marca",
-        "desc": "SKERCHERS METAL",
-        "id": "MARC-044"
-    },
-    {
-        "nombre": "p",
-        "cat": "linia de marca",
-        "desc": "BOSS ARO CUADRADO  DE ACETATO",
-        "id": "MARC-045"
-    },
-    {
-        "nombre": "p2",
-        "cat": "linia de marca",
-        "desc": "FILA ACETATO",
-        "id": "MARC-046"
-    },
-    {
-        "nombre": "q",
-        "cat": "linia de marca",
-        "desc": "GANT",
-        "id": "MARC-047"
-    },
-    {
-        "nombre": "q2",
-        "cat": "linia de marca",
-        "desc": "SKECHERS METAL",
-        "id": "MARC-048"
-    },
-    {
-        "nombre": "r",
-        "cat": "linia de marca",
-        "desc": "SKECKERS ACETATO",
-        "id": "MARC-049"
-    },
-    {
-        "nombre": "r2",
-        "cat": "linia de marca",
-        "desc": "FILA ACETATO",
-        "id": "MARC-050"
-    },
-    {
-        "nombre": "s",
-        "cat": "linia de marca",
-        "desc": "EMPORIO ARMANI ACETATO",
-        "id": "MARC-051"
-    },
-    {
-        "nombre": "s2",
-        "cat": "linia de marca",
-        "desc": "addidas",
-        "id": "MARC-052"
-    },
-    {
-        "nombre": "t",
-        "cat": "linia de marca",
-        "desc": "MISSONI ACETATO",
-        "id": "MARC-053"
-    },
-    {
-        "nombre": "t2",
-        "cat": "linia de marca",
-        "desc": "CONVERSE",
-        "id": "MARC-054"
-    },
-    {
-        "nombre": "u",
-        "cat": "linia de marca",
-        "desc": "TOUS",
-        "id": "MARC-055"
-    },
-    {
-        "nombre": "u2",
-        "cat": "linia de marca",
-        "desc": "MARC JACOBS",
-        "id": "MARC-056"
-    },
-    {
-        "nombre": "v",
-        "cat": "linia de marca",
-        "desc": "EMPORIO ARMANI METAL",
-        "id": "MARC-057"
-    },
-    {
-        "nombre": "v2",
-        "cat": "linia de marca",
-        "desc": "FILA",
-        "id": "MARC-058"
-    },
-    {
-        "nombre": "w",
-        "cat": "linia de marca",
-        "desc": "CARRERA ARO DE METAL",
-        "id": "MARC-059"
-    },
-    {
-        "nombre": "w2",
-        "cat": "linia de marca",
-        "desc": "EMPORIO ARMANI METAL",
-        "id": "MARC-060"
-    },
-    {
-        "nombre": "x",
-        "cat": "linia de marca",
-        "desc": "CARRERA ARO DE  ACETATO",
-        "id": "MARC-061"
-    },
-    {
-        "nombre": "x2",
-        "cat": "linia de marca",
-        "desc": "EMPORIO ARMANI ACETATO",
-        "id": "MARC-062"
-    },
-    {
-        "nombre": "y",
-        "cat": "linia de marca",
-        "desc": "LEVIS",
-        "id": "MARC-063"
-    },
-    {
-        "nombre": "y2",
-        "cat": "linia de marca",
-        "desc": "TOMMY HILFIGER",
-        "id": "MARC-064"
-    },
-    {
-        "nombre": "z",
-        "cat": "linia de marca",
-        "desc": "CONVERSE",
-        "id": "MARC-065"
-    },
-    {
-        "nombre": "z2",
-        "cat": "linia de marca",
-        "desc": "addidas",
-        "id": "MARC-066"
-    }
+  {
+    "nombre": ["a3", "o"],
+    "cat": "linia de marca",
+    "desc": "LACOSTE",
+    "id": "UN-a3",
+    "visible_en_auditoria": true,
+    "old_desc": ["LACOSTE", "LACOSTE"]
+  },
+  {
+    "nombre": ["y", "k2"],
+    "cat": "linia de marca",
+    "desc": "LEVIS",
+    "id": "UN-k2",
+    "visible_en_auditoria": true,
+    "old_desc": ["LEVIS", "LEVIS"]
+  },
+  {
+    "nombre": ["x2", "s"],
+    "cat": "linia de marca",
+    "desc": "EMPORIO ARMANI ARO DE ACETATO",
+    "id": "UN-s",
+    "visible_en_auditoria": true,
+    "old_desc": ["EMPORIO ARMANI ACETATO", "EMPORIO ARMANI ACETATO"]
+  },
+  {
+    "nombre": ["w2", "v"],
+    "cat": "linia de marca",
+    "desc": "EMPORIO ARMANI ARO DE METAL",
+    "id": "UN-v",
+    "visible_en_auditoria": true,
+    "old_desc": ["EMPORIO ARMANI METAL", "EMPORIO ARMANI METAL"]
+  },
+  {
+    "nombre": ["z2", "s2"],
+    "cat": "linia de marca",
+    "desc": "addidas",
+    "id": "UN-s2",
+    "visible_en_auditoria": true,
+    "old_desc": ["addidas", "addidas"]
+  },
+  {
+    "nombre": ["h2", "y2"],
+    "cat": "linia de marca",
+    "desc": "TOMMY HILFIGER",
+    "id": "UN-h2",
+    "visible_en_auditoria": true,
+    "old_desc": ["TOMMY HILFIGER", "TOMMY HILFIGER"]
+  },
+  {
+    "nombre": ["u", "d2"],
+    "cat": "linia de marca",
+    "desc": "TOUS",
+    "id": "UN-d2",
+    "visible_en_auditoria": true,
+    "old_desc": ["TOUS", "TOUS"]
+  },
+  {
+    "nombre": ["t2", "z"],
+    "cat": "linia de marca",
+    "desc": "CONVERSE",
+    "id": "UN-t2",
+    "visible_en_auditoria": true,
+    "old_desc": ["CONVERSE", "CONVERSE"]
+  },
+  {
+    "nombre": ["u2", "g2"],
+    "cat": "linia de marca",
+    "desc": "Marc Jacobs",
+    "id": "UN-g2",
+    "visible_en_auditoria": true,
+    "old_desc": ["MARC JACOBS", "Marc Jacobs"]
+  },
+  {
+    "nombre": ["p2", "r2"],
+    "cat": "linia de marca",
+    "desc": "FILA ARO DE ACETATO",
+    "id": "UN-p2",
+    "visible_en_auditoria": true,
+    "old_desc": ["FILA ACETATO", "FILA ACETATO"]
+  },
+  {
+    "nombre": ["q2", "o2"],
+    "cat": "linia de marca",
+    "desc": "SKERCHERS ARO DE METAL",
+    "id": "UN-o2",
+    "visible_en_auditoria": true,
+    "old_desc": ["SKECHERS METAL", "SKERCHERS METAL"]
+  },
+  {
+    "nombre": ["r", "f2"],
+    "cat": "linia de marca",
+    "desc": "SKECHERS ARO DE ACETATO",
+    "id": "UN-f2",
+    "visible_en_auditoria": true,
+    "old_desc": ["SKECKERS ACETATO", "SKECHERS ACETATO"]
+  },
+  {
+    "nombre": ["t", "b2"],
+    "cat": "linia de marca",
+    "desc": "MISSONI ARO DE ACETATO",
+    "id": "UN-b2",
+    "visible_en_auditoria": true,
+    "old_desc": ["MISSONI ACETATO", "MISSONI ACETATO"]
+  },
+  {
+    "nombre": ["b3", "m2"],
+    "cat": "linia de marca",
+    "desc": "MISSON ARO DE METAL",
+    "id": "UN-b3",
+    "visible_en_auditoria": true,
+    "old_desc": ["MISSONI METAL", "MISSONI METAL"]
+  },
+  {
+    "nombre": ["c3", "q"],
+    "cat": "linia de marca",
+    "desc": "GANT",
+    "id": "UN-c3",
+    "visible_en_auditoria": true,
+    "old_desc": ["GANT", "GANT"]
+  },
+  {
+    "nombre": ["v2", "d3"],
+    "cat": "linia de marca",
+    "desc": "FILA",
+    "id": "UN-d3",
+    "visible_en_auditoria": true,
+    "old_desc": ["FILA", "FILA"]
+  },
+  {
+    "nombre": ["n", "m"],
+    "cat": "linia de marca",
+    "desc": "GUESS ARO DE METAL",
+    "id": "UN-m",
+    "visible_en_auditoria": true,
+    "old_desc": ["GUESS ARO DE METAL", "GUESS ARO DE METAL"]
+  },
+  {
+    "nombre": ["m3", "n3"],
+    "cat": "linia de marca",
+    "desc": "CALVIN KLEIN ARO SEMI REDONDO DE METAL",
+    "id": "UN-m3",
+    "visible_en_auditoria": true,
+    "old_desc": [
+      "CALVIN KLEIN ARO SEMI REDONDO DE METAL",
+      "CALVIN KLEIN ARO SEMI REDONDO DE METAL"
+    ]
+  },
+  {
+    "nombre": ["i", "k"],
+    "cat": "linia de marca",
+    "desc": "CALVIN KLEIN ARO REDONDO DE METAL",
+    "id": "UN-i",
+    "visible_en_auditoria": true,
+    "old_desc": [
+      "CALVIN KLEIN ARO CUADRADO DE METAL",
+      "CALVIN KLEIN ARO REDONDO DE METAL"
+    ]
+  },
+  {
+    "nombre": ["l", "g"],
+    "cat": "linia de marca",
+    "desc": "CALVIN KLEIN ARO REDONDO DE METAL",
+    "id": "UN-g",
+    "visible_en_auditoria": true,
+    "old_desc": [
+      "CALVIN KLEIN ARO REDONDO DE METAL",
+      "CALVIN KLEIN ARO REDONDO DE METAL"
+    ]
+  },
+  {
+    "nombre": ["c2", "l2"],
+    "cat": "linia de marca",
+    "desc": "NINE WEST ARO SEMI AL AIRE DE METAL",
+    "id": "UN-c2",
+    "visible_en_auditoria": true,
+    "old_desc": [
+      "NINE WEST ARO SEMI AL AIRE DE METAL",
+      "NINE WEST ARO SEMI AL AIRE DE METAL"
+    ]
+  },
+  {
+    "nombre": ["n2", "i2"],
+    "cat": "linia de marca",
+    "desc": "BOSS ARO REDONDO DE ACETATO",
+    "id": "UN-i2",
+    "visible_en_auditoria": true,
+    "old_desc": ["BOSS REDONDO", "BOSS ARO REDONDO DE ACETATO"]
+  },
+  {
+    "nombre": ["p", "a2"],
+    "cat": "linia de marca",
+    "desc": "BOSS ARO CUADRADO  DE ACETATO",
+    "id": "UN-a2",
+    "visible_en_auditoria": true,
+    "old_desc": ["BOSS ARO CUADRADO  DE ACETATO", "BOSS CUADRADO"]
+  },
+  {
+    "nombre": ["e3", "f3"],
+    "cat": "linia de marca",
+    "desc": "MARCIANO ARO DE METAL Y ACETATO",
+    "id": "UN-e3",
+    "visible_en_auditoria": true,
+    "old_desc": [
+      "MARCIANO ARO DE METAL Y ACETATO",
+      "MARCIANO ARO DE METAL Y ACETATO"
+    ]
+  },
+  {
+    "nombre": ["g3", "h3"],
+    "cat": "linia de marca",
+    "desc": "MARCIANO ARO DE METAL Y ACETATO",
+    "id": "UN-g3",
+    "visible_en_auditoria": true,
+    "old_desc": [
+      "MARCIANO ARO DE METAL Y ACETATO",
+      "MARCIANO ARO DE METAL Y ACETATO"
+    ]
+  },
+  {
+    "nombre": ["f", "e"],
+    "cat": "linia de marca",
+    "desc": "CALVIN KLEIN ARO CUADRADO DE METAL",
+    "id": "UN-e",
+    "visible_en_auditoria": true,
+    "old_desc": [
+      "CALVIN KLEIN ARO CUADRADO DE METAL",
+      "CALVIN KLEIN ARO CUADRADO DE METAL"
+    ]
+  },
+  {
+    "nombre": ["h", "j"],
+    "cat": "linia de marca",
+    "desc": "CALVIN KLEIN ARO CUADRADO DE METAL",
+    "id": "UN-h",
+    "visible_en_auditoria": true,
+    "old_desc": [
+      "CALVIN KLEIN ARO CUADRADO DE METAL",
+      "CALVIN KLEIN ARO CUADRADO DE METAL"
+    ]
+  },
+  {
+    "nombre": ["e2", "x"],
+    "cat": "linia de marca",
+    "desc": "CARRERA ARO DE  ACETATO",
+    "id": "UN-e2",
+    "visible_en_auditoria": true,
+    "old_desc": ["CARRERA ARO DE ACETATO", "CARRERA ARO DE  ACETATO"]
+  },
+  {
+    "nombre": ["j2", "w"],
+    "cat": "linia de marca",
+    "desc": "CARRERA ARO DE METAL",
+    "id": "UN-j2",
+    "visible_en_auditoria": true,
+    "old_desc": ["CARRERA ARO DE METAL", "CARRERA ARO DE METAL"]
+  },
+  {
+    "nombre": ["d", "b"],
+    "cat": "linia de marca",
+    "desc": "CARRERA",
+    "id": "UN-b",
+    "visible_en_auditoria": true,
+    "old_desc": ["CAROLINA CARRERA", "CAROLINA CARRERA"]
+  },
+  {
+    "nombre": ["c", "a"],
+    "cat": "linia de marca",
+    "desc": "GUESS ARO DE ACETATO",
+    "id": "UN-a",
+    "visible_en_auditoria": true,
+    "old_desc": ["GUESS ACETATO", "GUESS ARO DE ACETATO"]
+  },
+  {
+    "nombre": ["i3", "j3"],
+    "cat": "linia de marca",
+    "desc": "MARCIANO ARO DE ACETATO",
+    "id": "UN-i3",
+    "visible_en_auditoria": true,
+    "old_desc": ["MARCIANO ARO DE ACETATO", "MARCIANO ARO DE ACETATO"]
+  },
+  {
+    "nombre": ["k3", "l3"],
+    "cat": "linia de marca",
+    "desc": "CAROLINA HERRERA ARO DE ACETATO",
+    "id": "UN-k3",
+    "visible_en_auditoria": true,
+    "old_desc": ["CAROLINA HERRERA ARO DE ACETATO", "CAROLINA HERRERA "]
+  },
+  {
+    "nombre": ["A1", "B1"],
+    "cat": "linia fina",
+    "desc": "Aro fino redondo, dorado de metal ",
+    "visible_en_auditoria": true,
+    "old_desc": ["Nuevo ingreso aspirado", "Nuevo ingreso aspirado"]
+  },
+  {
+    "nombre": ["C1", "D1"],
+    "cat": "linia fina",
+    "desc": "Aro fino cuadrado de acetato ",
+    "old_desc": ["Aro fino cuadrado de acetato ", "Aspirado individual"]
+  },
+  {
+    "nombre": ["F1", "E1"],
+    "cat": "linia fina",
+    "desc": "Aro fino semi redondo transparente de acetato ",
+    "old_desc": ["Aspirado individual", "Aspirado individual"]
+  },
+  {
+    "nombre": ["H1", "G1"],
+    "cat": "linia fina",
+    "desc": "Aro fino cuadrado de acetato ",
+    "old_desc": ["Aspirado individual", "Aspirado individual"]
+  },
+  {
+    "nombre": ["I1", "J1"],
+    "cat": "linia fina",
+    "desc": "Aro fino redondo de acetato ",
+    "old_desc": ["Aspirado individual", "Aspirado individual"]
+  },
+  {
+    "nombre": ["L1", "K1"],
+    "cat": "linia fina",
+    "desc": "Aro fino de acetato estilo aviador ",
+    "old_desc": ["Aspirado individual", "Aro fino de acetato estilo aviador "]
+  },
+  {
+    "nombre": ["M1", "N1"],
+    "cat": "linia fina",
+    "desc": "Aro fino cuadro  de acetato ",
+    "old_desc": ["Aspirado individual", "Aspirado individual"]
+  },
+  {
+    "nombre": ["O1", "P1"],
+    "cat": "linia fina",
+    "desc": "Aro fino estilo ágatado de metal ",
+    "old_desc": ["Aspirado individual", "Aspirado individual"]
+  },
+  {
+    "nombre": ["R1", "Q1"],
+    "cat": "linia fina",
+    "desc": "Aro fino cuadrado transparente de acetato ",
+    "old_desc": [
+      "Aspirado individual",
+      "Aro fino cuadrado transparente de acetato "
+    ]
+  },
+  {
+    "nombre": ["S1", "T1"],
+    "cat": "linia fina",
+    "desc": "Aro fino cuadrado estampado de acetato ",
+    "old_desc": ["Aspirado individual", "Aspirado individual"]
+  },
+  {
+    "nombre": ["V1", "U1"],
+    "cat": "linia fina",
+    "desc": "Aro fino cuadrado 2 tonos \nDe acetato ",
+    "old_desc": ["Aspirado individual", "Aspirado individual"]
+  },
+  {
+    "nombre": ["W1", "X1"],
+    "cat": "linia fina",
+    "desc": "Aro fino de metal ",
+    "old_desc": ["Aspirado individual", "Aspirado individual"]
+  },
+  {
+    "nombre": ["Y1", "Z1"],
+    "cat": "linia fina",
+    "desc": "Aro fino dorado de metal ",
+    "old_desc": ["Aspirado individual", "Aspirado individual"]
+  },
+  {
+    "nombre": ["P3", "O3"],
+    "cat": "linia fina",
+    "desc": "Aro fino cuadrado de metal con varilla cubierta de acetato ",
+    "old_desc": ["Aspirado individual", "Aspirado individual"]
+  },
+  {
+    "nombre": ["Q3", "R3"],
+    "cat": "linia fina",
+    "desc": "Aro fino rectangular tono rosa de acetato ",
+    "old_desc": ["Aspirado individual", "Aspirado individual"]
+  },
+  {
+    "nombre": ["T3", "S3"],
+    "cat": "linia fina",
+    "desc": "Aro fino grande de metal ",
+    "old_desc": ["Aspirado individual", "Aspirado individual"]
+  }
 ]

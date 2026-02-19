@@ -28,7 +28,7 @@ function filtrar(categoria, btn) {
   cargarObras(categoria);
 }
 
-// 3. RENDERIZADO DE CARTAS (Galería Viva)
+// 3. RENDERIZADO DE CARTAS (Galería Viva y Multivista)
 function cargarObras(filtro = "todos") {
   if (!galeria) return;
   galeria.innerHTML = "";
@@ -44,35 +44,36 @@ function cargarObras(filtro = "todos") {
     const card = document.createElement("div");
     card.className = "card animar-subida";
 
-    // --- AQUÍ ESTÁ EL TRUCO ---
-    // Si item.desc existe y no está vacío, usamos ese. Si no, usamos el nombre.
-    const textoParaGrid =
-      item.desc && item.desc.trim() !== "" ? item.desc : item.nombre;
+    // --- LÓGICA MULTIVISTA ---
+    // Si es una lista, la primera es el frente, la segunda el lado.
+    const esMulti = Array.isArray(item.nombre);
+    const imgFrente = esMulti ? item.nombre[0] : item.nombre;
+    const imgLado = esMulti && item.nombre[1] ? item.nombre[1] : null;
 
+    const textoParaGrid =
+      item.desc && item.desc.trim() !== "" ? item.desc : "Opticentro A&E";
+
+    // Construimos el HTML de la imagen
+    // Si tiene segunda imagen, añadimos la clase 'has-hover'
     card.innerHTML = `
-      <img src="img/${item.nombre}.jpeg" alt="${item.nombre}">
+      <div class="img-container ${imgLado ? "has-hover" : ""}">
+        <img src="img/${imgFrente}.jpeg" class="img-main" alt="${imgFrente}">
+        ${imgLado ? `<img src="img/${imgLado}.jpeg" class="img-hover" alt="${imgLado}">` : ""}
+      </div>
       <span class="descripcion-viva">${textoParaGrid}</span>
     `;
-    // ---------------------------
 
     card.onclick = () => {
       const modal = document.getElementById("modal-visor");
       const imgFull = document.getElementById("img-full");
       const descTxt = document.getElementById("desc-texto");
 
-      imgFull.src = `img/${item.nombre}.jpeg`;
+      // En el modal siempre mostramos la de frente primero
+      imgFull.src = `img/${imgFrente}.jpeg`;
 
       const texto = item.desc || "Calidad y estilo para tu visión.";
-
-      if (texto.trim() !== "") {
-        descTxt.textContent = texto;
-        descTxt.style.display = "block";
-        descTxt.classList.remove("descripcion-viva");
-        void descTxt.offsetWidth;
-        descTxt.classList.add("descripcion-viva");
-      } else {
-        descTxt.style.display = "none";
-      }
+      descTxt.textContent = texto;
+      descTxt.style.display = "block";
 
       modal.style.display = "flex";
       document.body.style.overflow = "hidden";
