@@ -9,7 +9,7 @@ let datosInventario = [];
 // 1. CARGA DE DATOS (Con truco Anti-Cache)
 async function cargarDatos() {
   try {
-    const respuesta = await fetch("inventario.json?v=" + Date.now());
+    const respuesta = await fetch(`inventario.json?v=${new Date().getTime()}`);
     datosInventario = await respuesta.json();
     cargarObras("todos");
   } catch (error) {
@@ -44,8 +44,6 @@ function cargarObras(filtro = "todos") {
     const card = document.createElement("div");
     card.className = "card animar-subida";
 
-    // --- LÓGICA MULTIVISTA ---
-    // Si es una lista, la primera es el frente, la segunda el lado.
     const esMulti = Array.isArray(item.nombre);
     const imgFrente = esMulti ? item.nombre[0] : item.nombre;
     const imgLado = esMulti && item.nombre[1] ? item.nombre[1] : null;
@@ -53,28 +51,22 @@ function cargarObras(filtro = "todos") {
     const textoParaGrid =
       item.desc && item.desc.trim() !== "" ? item.desc : "Opticentro A&E";
 
-    // Construimos el HTML de la imagen
-    // Si tiene segunda imagen, añadimos la clase 'has-hover'
+    // --- MEJORA: APLICANDO LAZY LOADING EN LAS IMÁGENES ---
     card.innerHTML = `
       <div class="img-container ${imgLado ? "has-hover" : ""}">
-        <img src="img/${imgFrente}.jpeg" class="img-main" alt="${imgFrente}">
-        ${imgLado ? `<img src="img/${imgLado}.jpeg" class="img-hover" alt="${imgLado}">` : ""}
+        <img src="img/${imgFrente}.jpeg" class="img-main" alt="${imgFrente}" loading="lazy">
+        ${imgLado ? `<img src="img/${imgLado}.jpeg" class="img-hover" alt="${imgLado}" loading="lazy">` : ""}
       </div>
       <span class="descripcion-viva">${textoParaGrid}</span>
     `;
 
+    // ... (resto del código del modal igual)
     card.onclick = () => {
       const modal = document.getElementById("modal-visor");
       const imgFull = document.getElementById("img-full");
       const descTxt = document.getElementById("desc-texto");
-
-      // En el modal siempre mostramos la de frente primero
       imgFull.src = `img/${imgFrente}.jpeg`;
-
-      const texto = item.desc || "Calidad y estilo para tu visión.";
-      descTxt.textContent = texto;
-      descTxt.style.display = "block";
-
+      descTxt.textContent = item.desc || "Calidad y estilo para tu visión.";
       modal.style.display = "flex";
       document.body.style.overflow = "hidden";
     };

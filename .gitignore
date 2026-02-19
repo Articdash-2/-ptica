@@ -11,3 +11,11 @@ env/
 .vscode/
 .history/
 .DS_Store
+
+# Ignorar backups locales
+tool/backups/
+# Ignorar archivos de Python
+__pycache__/
+*.pyc
+# Ignorar carpetas de sistema
+.DS_Store

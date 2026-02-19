@@ -114,21 +114,25 @@ class OptiAdmin(BaseApp):
             self.dnd_bind('<<Drop>>', self.handle_drop)
 
     def subir_a_github(self):
-        """ Ejecuta comandos de Git para actualizar la web con commit privado """
+        """ Ejecuta comandos de Git desde la raíz del proyecto """
         try:
-            # Primero guardamos cualquier cambio local
             self.motor.guardar_json(self.inventario)
-            print("🚀 Sincronizando con GitHub...")
+            print("🚀 Sincronizando con GitHub desde la raíz...")
             
-            # Ejecución de comandos en cadena
-            subprocess.run(["git", "add", "."], check=True)
-            subprocess.run(["git", "commit", "-m", "Update Catalog"], check=True)
-            subprocess.run(["git", "push"], check=True)
+            # Buscamos la carpeta raíz (un nivel arriba de /tool)
+            ruta_raiz = os.path.abspath(os.path.join(os.getcwd(), ".."))
+            
+            # Ejecutamos los comandos especificando el directorio de trabajo (cwd)
+            subprocess.run(["git", "add", "."], cwd=ruta_raiz, check=True)
+            subprocess.run(["git", "commit", "-m", "Update Catalog"], cwd=ruta_raiz, check=True)
+            subprocess.run(["git", "push"], cwd=ruta_raiz, check=True)
             
             messagebox.showinfo("NINJA CLOUD", "✅ ¡Catálogo actualizado en la web con éxito!")
-        except subprocess.CalledProcessError:
-            messagebox.showerror("Error Git", "No se pudo subir. Verifica tu conexión o configuración de Git.")
+        except subprocess.CalledProcessError as e:
+            print(f"Error Git: {e}")
+            messagebox.showerror("Error Git", "No hay cambios nuevos o error de conexión.")
         except Exception as e:
+            print(f"Error: {e}")
             messagebox.showerror("Error", str(e))
 
     def handle_drop(self, event):
