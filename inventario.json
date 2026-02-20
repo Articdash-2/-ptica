@@ -653,5 +653,137 @@
             "Aspirado individual",
             "Aspirado individual"
         ]
+    },
+    {
+        "nombre": [
+            "V3",
+            "U3"
+        ],
+        "cat": "linia niño/a",
+        "desc": "Aro de Acetato ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "W3",
+            "X3"
+        ],
+        "cat": "linia niño/a",
+        "desc": "Aro de acetato ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "Y3",
+            "Z3"
+        ],
+        "cat": "linia niño/a",
+        "desc": "Aro de acetato con sistema flex ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "B4",
+            "A4"
+        ],
+        "cat": "linia niño/a",
+        "desc": "Aro de acetato ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "D4",
+            "C4"
+        ],
+        "cat": "linia niño/a",
+        "desc": "Aro de acetato ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "F4",
+            "E4"
+        ],
+        "cat": "linia niño/a",
+        "desc": "Aro de acetato",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "H4",
+            "G4"
+        ],
+        "cat": "linia niño/a",
+        "desc": "Aro de acetato con sistema flex ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "J4",
+            "I4"
+        ],
+        "cat": "linia niño/a",
+        "desc": "Aro de acetato con sistema flex \n",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "L4",
+            "K4"
+        ],
+        "cat": "linia niño/a",
+        "desc": "Aro de acetato con sistema flex \n",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "N4",
+            "M4"
+        ],
+        "cat": "linia niño/a",
+        "desc": "Aro de acetato ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "O4",
+            "P4"
+        ],
+        "cat": "linia niño/a",
+        "desc": "Aro de acetato \n",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
     }
 ]
