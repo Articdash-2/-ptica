@@ -1,5 +1,5 @@
 import json, os, shutil, subprocess, customtkinter as ctk
-from PIL import Image
+from PIL import Image, ImageOps
 from tkinter import messagebox, filedialog
 from datetime import datetime
 
@@ -76,7 +76,11 @@ class MotorInventario:
         nombre_nuevo = self.generar_nombre_unico(inventario)
         ruta_destino = os.path.join(self.img_folder, f"{nombre_nuevo}.jpeg")
         try:
-            img = Image.open(ruta_original).convert("RGB")
+            # --- MEJORA NINJA: AUTO-ROTACIÓN ---
+            img = Image.open(ruta_original)
+            img = ImageOps.exif_transpose(img) # <--- Esta línea hace la magia
+            img = img.convert("RGB")
+            # -----------------------------------
             img.save(ruta_destino, "JPEG", quality=85)
             os.remove(ruta_original)
             inventario.append({

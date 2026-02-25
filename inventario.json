@@ -785,5 +785,209 @@
             "Aspirado ninja",
             "Aspirado ninja"
         ]
+    },
+    {
+        "nombre": [
+            "R4",
+            "Q4"
+        ],
+        "cat": "linia media",
+        "desc": "Aro HIPER VISIÓN de acetato ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "T4",
+            "S4"
+        ],
+        "cat": "linia media",
+        "desc": "Aro GIORDANNI de acetato ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "V4",
+            "U4"
+        ],
+        "cat": "linia media",
+        "desc": "Aro VAGGIO de metal y acetato ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "X4",
+            "W4"
+        ],
+        "cat": "linia media",
+        "desc": "Aro VAGGIO de acetato ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "Z4",
+            "Y4"
+        ],
+        "cat": "linia media",
+        "desc": "Aro DANIEL KLEIN de metal ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "B5",
+            "A5"
+        ],
+        "cat": "linia media",
+        "desc": "Aro BOLOCO de acetato ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "D5",
+            "C5"
+        ],
+        "cat": "linia media",
+        "desc": "Aro LUTHERA de acetato ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "F5",
+            "E5"
+        ],
+        "cat": "linia media",
+        "desc": "Aro HÍPER VISIÓN de acetato ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "H5",
+            "G5"
+        ],
+        "cat": "linia media",
+        "desc": "Aro MATIZZ de acetato ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "J5",
+            "I5"
+        ],
+        "cat": "linia media",
+        "desc": "Aro DANIEL KLEIN de metal ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "L5",
+            "K5"
+        ],
+        "cat": "linia media",
+        "desc": "Aro GISALLY de acetato ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "N5",
+            "M5"
+        ],
+        "cat": "linia media",
+        "desc": "Aro GIORDANNI de acetato ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "P5",
+            "O5"
+        ],
+        "cat": "linia media",
+        "desc": "Aro DONATTO de acetato ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "R5",
+            "Q5"
+        ],
+        "cat": "linia media",
+        "desc": "Aro MATIZZ de acetato y metal ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "T5",
+            "S5"
+        ],
+        "cat": "linia media",
+        "desc": "Aro ROCHESTER de metal ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "V5",
+            "U5"
+        ],
+        "cat": "linia media",
+        "desc": "Aro DONATTO de acetato ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
+    },
+    {
+        "nombre": [
+            "X5",
+            "W5"
+        ],
+        "cat": "linia media",
+        "desc": "Aro GIORDANNI de acetato ",
+        "old_desc": [
+            "Aspirado ninja",
+            "Aspirado ninja"
+        ]
     }
 ]
