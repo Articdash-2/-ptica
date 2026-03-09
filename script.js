@@ -42,7 +42,11 @@ function cargarObras(filtro = "todos") {
 
   items.forEach((item) => {
     const card = document.createElement("div");
+    card.className = "card card-lente animar-subida";
     card.className = "card animar-subida";
+    /*Usamos el ID del producto (o el nombre si no tiene ID) para identificar el favorito*/
+    const idProducto = item.id || (esMulti ? item.nombre[0] : item.nombre);
+    card.setAttribute("data-id", idProducto);
 
     const esMulti = Array.isArray(item.nombre);
     const imgFrente = esMulti ? item.nombre[0] : item.nombre;
@@ -124,3 +128,49 @@ document.querySelector(".cerrar-modal").onclick = () => {
   document.getElementById("modal-visor").style.display = "none";
   document.body.style.overflow = "auto";
 };
+
+let favoritos = JSON.parse(localStorage.getItem("favs_opticentro")) || [];
+
+function setupDobleClick() {
+  // Seleccionamos todas las tarjetas de productos
+  document.querySelectorAll(".card-lente").forEach((card) => {
+    card.addEventListener("dblclick", function () {
+      const id = this.getAttribute("data-id"); // Asegúrate que tu tarjeta tenga data-id
+      ejecutarMeGusta(id, this);
+    });
+  });
+}
+
+function ejecutarMeGusta(id, elemento) {
+  // 1. Agregar a favoritos si no está
+  if (!favoritos.includes(id)) {
+    favoritos.push(id);
+    localStorage.setItem("favs_opticentro", JSON.stringify(favoritos));
+  }
+
+  // 2. Crear y mostrar el corazón animado
+  const corazon = document.createElement("div");
+  corazon.innerHTML = "❤️";
+  corazon.className = "heart-animation animate-heart";
+  elemento.appendChild(corazon);
+
+  // 3. Limpiar el elemento después de la animación
+  setTimeout(() => corazon.remove(), 800);
+
+  actualizarContadorGlobal();
+}
+
+function actualizarContadorGlobal() {
+  const btnFav = document.getElementById("wishlist-btn");
+  const countSpan = document.getElementById("fav-count");
+
+  if (favoritos.length > 0) {
+    btnFav.classList.remove("hidden");
+    countSpan.innerText = favoritos.length;
+  } else {
+    btnFav.classList.add("hidden");
+  }
+}
+
+// Llamar al cargar los productos
+// setupDobleClick();
